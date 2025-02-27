@@ -1,7 +1,5 @@
 # Portfolio
 
-My Portfolio
-
 ### Project Description
 
 This is a how i created my portfolio website using tailwind css cli, html, js.
@@ -12,6 +10,7 @@ This is a how i created my portfolio website using tailwind css cli, html, js.
 
 Step 1:
 npx @tailwindcss/cli -i ./Portfolio/css/input.css -o ./Portfolio/css/output.css --watch
+
 Step2:
 Inside the html page import output.css
 
