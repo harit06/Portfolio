@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/prod.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+<body class="bg-[#efe4dd]">
+<div class="bg-gray-800 sticky top-0 z-50">
+    <nav>
+        <div class="mx-auto max-w-screen px-2 sm:px-6 lg:px-8 sticky">
+        <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open menu</span>
+                <svg class="block size-6 open-svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="hidden size-6 close-svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            
+            <div class="hidden sm:ml-6 sm:block">
+                <div id="nav-div" class="flex space-x-4">
+                <a id="nav-home" href="#home" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-gray-800 hover:text-white">Home</a>
+                <a id="nav-skills" href="#skills" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-gray-800 hover:text-white">Skills</a>
+                <a id="nav-exp" href="#experience" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-gray-800 hover:text-white">Experience</a>
+                <a id="nav-proj"href="#projects" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-gray-800 hover:text-white">Projects</a>
+                </div>
+            </div><!-- Contact Button -->
+            
+            </div>
+            <div class="absolute right-0 flex items-center pr-2 sm:static sm:inset-auto">
+            <a href='https://github.com/harit06' target="_blank" rel="noopener noreferrer" class="px-3 py-2 text-sm font-medium text-gray-400 hover:bg-gray-800 hover:text-white">
+                Github
+            </a>
+            <button type="button" id="contact-btn" onclick="location.href='mailto:harit19961@gmail.com';" class="relative group rounded-full bg-gray-800 px-3 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
+                Contact
+            </button>
+    
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="hidden sticky" id="mobile-menu">
+        <div class="space-y-1 px-2 pt-2 pb-3">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#home" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+        <a href="#skills" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Skills</a>
+        <a href="#experience" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Experience</a>
+        <a href="#projects" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+        </div>
+    </div>
+</div>
+<section id="home" class="full-page flex">
+    <div class="flex md:flex-row md:min-w-screen md:h-screen flex-col">
+        <img src="./img/Hari.jpg" class="m-4 sm:w-auto md:w-1/3 lg:w-1/2 h-auto object-cover rounded-4xl">
+        <div class="flex flex-col justify-center items-center md:w-2/3 text-center mt-4 p-10">
+            <p id="para-name" class="text-xl md:text-4xl font-black md:font-roboto-mono">Hi! I'm Hariharasudhan Thirumurthy</p>
+            <p id="para-about" class="mt-4 lg:mt-12 text-base md:text-lg font-light leading-relaxed">
+                Adept software engineer with a diverse background across finance, device automation, and real-time analytics. Specializing in developing scalable distributed solutions, I excel at data streaming and geospatial data technologies. I am open to exploring a wide range of job opportunities that allow me to apply my extensive technical skills to solve intricate challenges. Welcome to my portfolio, discover how my expertise can advance your projects.
+            </p>
+            <div id="home-cert" class="flex flex-row mt-4 lg:mt-12 justify-center">
+                <img class="fade-in w-1/2 md:w-1/3 lg:w-1/4 h-auto" src="https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/twitter_thumb_201604_image.png">
+                <img class="fade-in w-1/2 md:w-1/3 lg:w-1/4 h-auto" src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="full-page">
+<div class="flex items-center justify-center min-h-screen">
+    <div class="flex flex-col items-center">
+        <h1 class="text-center  font-semibold md:text-4xl font-roboto-mono">Skills</h1>
+        <span class="inline-flex m-2 h-2 w-10 bg-blue-700 rounded-full"></span>
+    
+        <div class="pt-5 md:pt-8 grid grid-cols-5 gap-3 md:gap-7 ">
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=html&theme=light"><span class="tooltiptext">HTML</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=css&theme=light"><span class="tooltiptext">CSS</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=bootstrap&theme=light"><span class="tooltiptext">Bootstrap</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=tailwind&theme=light"><span class="tooltiptext">Tailwind</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=js&theme=light"><span class="tooltiptext">Javascript</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=ts&theme=light"><span class="tooltiptext">Typescript</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=react&theme=light"><span class="tooltiptext">React</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=nodejs&theme=light"><span class="tooltiptext">Node JS</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=java&theme=light"><span class="tooltiptext">Java</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=python&theme=light"><span class="tooltiptext">Python</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=spring&theme=light"><span class="tooltiptext">Spring</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=graphql&theme=light"><span class="tooltiptext">GraphQL</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=hibernate&theme=light"><span class="tooltiptext">Hibernate</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=mongodb&theme=light"><span class="tooltiptext">MongoDB</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=cassandra&theme=light"><span class="tooltiptext">Cassandra</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=postgres&theme=light"><span class="tooltiptext">Postgres</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=rabbitmq&theme=light"><span class="tooltiptext">RabbitMQ</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=kafka&theme=light"><span class="tooltiptext">Kafka</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=redis&theme=light"><span class="tooltiptext">Redis</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=aws&theme=light"><span class="tooltiptext">AWS</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=gcp&theme=light"><span class="tooltiptext">GCP</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=terraform&theme=light"><span class="tooltiptext">Terraform</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=jenkins&theme=light"><span class="tooltiptext">Jenkins</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=gitlab&theme=light"><span class="tooltiptext">Git Lab</span></div>
+            <div class="tooltip"><img src="https://skillicons.dev/icons?i=qt&theme=light"><span class="tooltiptext">QT5</span></div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="experience" class="full-page ">
+<div class="flex items-center justify-center min-h-screen ">
+    <div class="flex flex-col items-center">
+        <h1 class="mt-2 pt-2 text-center font-semibold md:text-4xl font-roboto-mono">Experience</h1>
+        <span class="inline-flex m-2 h-2 w-10 bg-blue-700 rounded-full"></span>
+        
+        <ol class="group/list">
+            <li class="mx-2 p-1 md:mx-6 md:p-4 mt-2 md:mt-0">
+            <div class="group 2xl:p-4 relative grid transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50"></div>
+                <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2 hover-title">MAR 2022 — JUN 2022</header>
+                <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-500">
+                        <a class="inline-flex items-baseline font-medium leading-tight hover-title w-full">
+                            <span>Senior Software Engineer - Project Staff</span>
+                            <span class="ml-auto">IC&SR IITM - Admavin</span>
+                        </a>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal">
+                        Worked on developing an application application that classifies people based on demographics from the geotags, enabling
+                        outdoor advertisers to maximize their reach and boosting profits.<br>
+                        ▪ Developed a real-time data processing system, enabling clients to dynamically adjust their market strategies, and thereby revolutionizing the outdoor ads industry.<br>
+                        ▪ Utilized containerization technology with Dockers to orchestrate and automate the CI/CD pipeline, optimizing development, testing, and deployment workflows for enhanced scalability and reliability.
+                    </p>
+                    <ul class="flex flex-wrap group-hover:text-teal-300 tech-tags" aria-label="Technologies used">
+                        <li class="mr-1.5 mt-2 tech-tag"><div>JavaScript</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>TypeScript</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>React</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Spring MVC</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Kafka</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Flink</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>MongoDB</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Jenkins</div></li>
+                    </ul>
+                </div>
+            </div></li>
+            <li class="mx-2 p-1 md:mx-6 md:p-4 mt-2 md:mt-0">
+            <div class="group 2xl:p-4 relative grid transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50"></div>
+                <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2 hover-title">MAR 2020 — FEB 2022</header>
+                <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-500">
+                        <a class="inline-flex items-baseline font-medium leading-tight hover-title w-full">
+                            <span>Senior Software Engineer</span>
+                            <span class="ml-auto">MASDAT Solutions - Waste Harmonics</span>
+                        </a>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal">
+                        Worked in a smart waste management company (Waste Harmonics), a leader in smart waste management,
+                         I spearheaded the integration of 2000 smart bins, enhancing system functionalities for real-time status
+                         updates and automating waste collection processes.<br>
+                        ▪ Produced low-latency statistical reports for metrics tracking and stakeholder reporting.<br>
+                        ▪ Re-engineered the web application to support multilingual capabilities, facilitating business expansion into the Middle East
+                        and Europe while significantly improving scalability and user experience.
+                        </p>
+                    <ul class="flex flex-wrap group-hover:text-teal-300" aria-label="Technologies used">
+                        <li class="mr-1.5 mt-2 tech-tag"><div>React</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Spring Boot</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Query DSL</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Airflow</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Hive</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Presto</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>SQL</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>AWS</div></li>
+                    </ul>
+                </div>
+            </div></li>
+            <li class="mx-2 p-1 md:mx-6 md:p-4 mt-2 md:mt-0">
+            <div class="group 2xl:p-4 relative grid transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50"></div>
+                <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2 hover-title">MAR 2020 — FEB 2022</header>
+                <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-500">
+                        <a class="inline-flex items-baseline font-medium leading-tight hover-title w-full">
+                            <span>Senior System Engineer</span>
+                            <span class="ml-auto">Infosys - Goldman Sachs</span>
+                        </a>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal">
+                        At Goldman Sachs, I contributed to the Margining Team and Client Onboarding Team, enhancing financial operations and client integration processes. I collaborated with cross-functional teams to streamline operations, ensuring robust risk management.<br>
+                        ▪ Collaborated with cross-functional teams to develop a comprehensive application for client onboarding processes including
+                        negotiations, due diligence, risk management, and account setup. This innovation reduced client onboarding time by 60%.<br>
+                        ▪ Identified data corruption in systems and developed validation routines and services to ensure data integrity during transfers,
+                        resulting in a 27% improvement in data accuracy.<br>
+                        ▪ Led the enhancement of a legacy application, including query optimizations and setting up new pipelines to fetch data from
+                        updated sources while deprecating invalid data sources. Ensured seamless and error-free operations by independently
+                        managing the entire project lifecycle, from conceptualizing the vision and creating the roadmap to designing,
+                        implementing, testing, and successfully launching the solution.
+                        </p>
+                    <ul class="flex flex-wrap group-hover:text-teal-300" aria-label="Technologies used">
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Spring MVC</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Spring Boot</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>DB2</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>PostgreSQL</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Maven</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Gradle</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Slang/SecDB</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Legend</div></li>
+                        <li class="mr-1.5 mt-2 tech-tag"><div>Express JS</div></li>
+                    </ul>
+                </div>
+            </div></li>
+        </ol>
+    </div>
+</div>
+
+
+</section>
+
+<section id="projects" class="full-page">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="flex flex-col items-center">
+            <h1 class="mt-2 pt-2 text-center font-semibold md:text-4xl font-roboto-mono">Projects</h1>
+            <span class="inline-flex m-2 h-2 w-10 bg-blue-700 rounded-full"></span>
+        
+            <!--Content Here-->
+            <div class="m-2 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <div class="group">
+                    <div class="flex flex-col h-full p-4 lg:group-hover:bg-slate-800/50 bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-200 ease-in-out transform lg:group-hover:scale-105">
+                        <div class="p-4 flex-grow">
+                            <div class="flex justify-center">
+                                <h3 class="text-lg font-semibold lg:group-hover:text-teal-300">Job Fetch Accelerator</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-2">
+                                Designed a dynamic system tailored to streamline job applications by fetching over 100 software job postings across the US daily. This tool enhances job seekers' visibility by ensuring timely applications, capitalizing on data that indicates earlier applications significantly increase the likelihood of a hiring manager's review.
+                            </p>
+                        </div>
+                        <div class="p-4">
+                            <span class="lg:group-hover:text-teal-300 lg:group-hover:bg-teal-400/10 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">React</span>
+                            <span class="lg:group-hover:text-teal-300 lg:group-hover:bg-teal-400/10 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Typescript</span>
+                            <span class="lg:group-hover:text-teal-300 lg:group-hover:bg-teal-400/10 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">GCP</span>
+                            <!-- Add more tags as needed -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group">
+                    <div class="flex flex-col h-full p-4 lg:group-hover:bg-slate-800/50 bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-200 ease-in-out transform lg:group-hover:scale-105">
+                        <div class="p-4 flex-grow">
+                            <div class="flex justify-center">
+                                <h3 class="text-lg font-semibold lg:group-hover:text-teal-300">NFC Attendance Tracker</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-2">
+                                Developed an innovative Android application, that utilizes the device's NFC module to scan RFID tags, marking students present for classes. The system automatically generates reports using the Apache POI library for Excel sheet manipulation and updates attendance records to the university portal.
+                            </p>
+                        </div>
+                        <div class="p-4">
+                            <span class="lg:group-hover:text-teal-300 lg:group-hover:bg-teal-400/10 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Android</span>
+                            <span class="lg:group-hover:text-teal-300 lg:group-hover:bg-teal-400/10 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">NFC</span>
+                            <span class="lg:group-hover:text-teal-300 lg:group-hover:bg-teal-400/10 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">RFID</span>
+                            <!-- Add more tags as needed -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="flex flex-col h-full p-4 lg:group-hover:bg-slate-800/50 bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-200 ease-in-out transform lg:group-hover:scale-105">
+                        <div class="p-4 flex-grow">
+                            <div class="flex justify-center">
+                                <h3 class="text-lg font-semibold lg:group-hover:text-teal-300">Smart Home Automation</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-2">
+                                Crafted an advanced smart home automation system utilizing a Raspberry Pi to serve as the central hub and an Android application for the user interface. Enhanced the system with voice control functionality to enable seamless user interactions. Additionally, integrated Siri compatibility via Siri Shortcuts to extend seamless control to iPhone users.
+                            </p>
+                        </div>
+                        <div class="p-4">
+                            <span class="lg:group-hover:text-teal-300 lg:group-hover:bg-teal-400/10 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Raspberry Pi</span>
+                            <span class="lg:group-hover:text-teal-300 lg:group-hover:bg-teal-400/10 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Android</span>
+                            <span class="lg:group-hover:text-teal-300 lg:group-hover:bg-teal-400/10 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Voice Control</span>
+                            <!-- Add more tags as needed -->
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                <div class="flex flex-col h-full p-4 bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-200 ease-in-out transform lg:group-hover:scale-105 lg:group-hover:bg-slate-800/50">
+                        <div class="p-4 flex-grow">
+                            <div class="flex justify-center">
+                                <h3 class="text-lg font-semibold lg:group-hover:text-teal-300">Secure Crypto Wallet Device</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-2">
+                                Engineered a secure hardware wallet for storing cryptographic keys that ensures physical isolation by disallowing any network connection, enhancing security against digital theft.
+                            </p>
+                        </div>
+                        <div class="p-4">
+                            <span class="lg:group-hover:text-teal-300 lg:group-hover:bg-teal-400/10 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">QT5</span>
+                            <span class="lg:group-hover:text-teal-300 lg:group-hover:bg-teal-400/10 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">BSP</span>
+                            <span class="lg:group-hover:text-teal-300 lg:group-hover:bg-teal-400/10 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">PCB Design</span>
+                            <!-- Add more tags as needed -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat the above div for each project card you want to display -->
+            </div>
+
+            
+        </div>
+    </div>
+
+</section>
+<script src="./js/script.js"></script>
+</body>
+</html>

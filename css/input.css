@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@config "../tailwind.config.js"; 
+
+@theme {
+    --font-roboto-mono: "Roboto Mono", "sans-serif";
+    --font-doto: "Doto", "sans-serif";
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    @apply transition-transform duration-200 ease-in-out transform;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(87,87,87);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    opacity: 90%;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 0;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .tooltip:hover {
+        @apply scale-115;
+    }
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 3s ease-in-out forwards;
+} 
+
+@media (min-width: 768px) {
+    .group:hover .hover-title {
+        color: #82ffee; /* Teal-300 in Tailwind */
+    }
+
+    .group:hover .tech-tag div {
+        background-color: rgba(38, 166, 154, 0.15); /* Teal-400/10 in Tailwind */
+        color: #82ffee; /* Teal-300 in Tailwind */
+    }
+}
+.tech-tag div {
+    @apply text-[#efe4dd] bg-slate-500 flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5;
+}
+
